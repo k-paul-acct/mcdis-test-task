@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "KafkaEventProcessor.Worker": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "KAFKA_BOOTSTRAP_SERVERS": "127.0.0.1:9092",
+        "KAFKA_TOPIC": "user-events",
+        "KAFKA_GROUP_ID": "kafka-event-processor-group",
+        "POSTGRES_CONNECTION_STRING": "Host=127.0.0.1;Port=5433;Database=appdb;Username=postgres;Password=postgres"
+      }
+    }
+  }
+}
